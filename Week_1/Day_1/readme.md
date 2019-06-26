@@ -91,3 +91,27 @@ Blockquotes
 ```markdown
 > this is a blockqoute
 ```
+
+## Lintting
+Installation
+```bash
+    npm install -g eslint
+```
+Configuration
+```bash
+    # in general
+    eslint --init
+
+    # lighthouse Labs specific configuration
+    curl -o /vagrant/.eslintrc.json https://gist.githubusercontent.com/kvirani/6cdb9511522d4357839718a050e7dd3b/raw/.eslintrc.json
+
+```
+Running
+```bash
+    eslint app.js
+    
+    # alternativly, to run it for all
+    eslint .
+```
+
+
