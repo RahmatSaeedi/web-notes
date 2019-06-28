@@ -136,3 +136,48 @@ undefined
 NaN
 // Not a Number. You'll learn more about NaN as we go on.
 ```
+
+## Primitive Types in JavaScript
+In JavaScript, all values which are not Objects are collectively referred to as primitives.
+* *`undefined`*
+* *`null`*
+* *`boolean`*
+* *`string`*
+* *`number`*
+* *`symbol`* *(introduced in ES6)*
+
+## Objects
+* Contain key-value pairs. Each key maps to a value
+* Contain keys which are always strings (or symbols)
+* Have unique keys
+* Have their keys point to values which can be of any type
+
+```javascript
+// Empty object
+const emptyObject = {};
+
+
+// Examples of two objects with same `key`.
+// The `key` is a string in both case 
+const someObject1 = { "key": "value" };
+const someObject2 = { key: "value" };
+```
+```javascript
+const person = {
+  first_name: "Ali",
+  last_name: "Smith",
+  address: {
+    street: "100 Queen St W",
+    city: "Toronto",
+    province: "ON"
+    postalCode: "M5H 2N2"
+  }
+  phone: 4163380685
+};
+
+
+// key-value
+person["address"]["city"]; // => Toronto
+
+```
+`Object.keys(...) ` retuns the keys of an object
