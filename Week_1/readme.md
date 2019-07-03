@@ -1,4 +1,16 @@
 # Notes for Week 1
+## GIT
+`git init`: Initialize a `GIT` folder.
+`git remote add origin git@github.com:USERNAME/REPOSITORY.git`: Add a remote repository for `fetch` and `push` to `master branch`.
+`git remote -v`: Lists existing remotes.
+`git push -u origin master`: Lists existing remotes.
+
+
+Linting, staging, committing, and pushing: 
+```bash
+%eslint% . --fix && git add . && git commit -m "{MESSAGE}" && git push
+```
+
 ## Creating Nested Folders via Windows CMD
 
 To create 10 folders named "Week_#", each containing 5 folders named "Day_#", and a *readme.md* file, run the following command via CMD
